@@ -4,7 +4,7 @@
 
 ##### By: Emily Segundo [GitHub](https://github.com/emilyThesecond) | 
 
-[GitHub Client](https://github.com/emilyThesecond/the-strokes-client) | [GitHub Server](https://github.com/emilyThesecond/the-strokes-server) | [Trello](https://trello.com/b/yd18VNAl/habitualize) | [Wireframe](https://www.figma.com/file/YprxeU1vsp4vPsFJyvYpnr/The-Strokes-Fan-Page?type=design&node-id=0-1&mode=design&t=XMbN1Suy5JEvD9PD-0) |
+[GitHub Client](https://github.com/emilyThesecond/the-strokes-client) | [GitHub Server](https://github.com/emilyThesecond/the-strokes-server) | [Trello](https://trello.com/b/cDNFxRQe/the-strokes-fan-page) | [Wireframe](https://www.figma.com/file/YprxeU1vsp4vPsFJyvYpnr/The-Strokes-Fan-Page?type=design&node-id=0-1&mode=design&t=XMbN1Suy5JEvD9PD-0) | [Component Hierarchy Diagram](https://lucid.app/lucidchart/b092cb38-8db3-4437-bfc0-d2a4fcf1974f/edit?invitationId=inv_2a93e254-59b8-4f60-b1cc-524ef87709bc)
 ***
 
 ### **_Description_**
@@ -45,4 +45,4 @@ Welcome to "The Strokes Fans"! This project is designed to create a platform whe
 
 _Credits_
 
-[Band Picture](https://www.vecteezy.com/members/miguelap)
+[Band Picture](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/220px-The_Strokes_by_Roger_Woolman.jpg)
