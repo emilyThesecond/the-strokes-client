@@ -46,3 +46,4 @@ Welcome to "The Strokes Fans"! This project is designed to create a platform whe
 _Credits_
 
 [Band Picture](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/220px-The_Strokes_by_Roger_Woolman.jpg)
+[Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAJEwHB5LD1cgEJNyTIobKfp8fhSH_1PybQ&usqp=CAU)
