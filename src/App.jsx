@@ -9,10 +9,29 @@ import Nav from './components/Nav'
 import Band from './components/Band'
 import Music from './components/Music'
 import Login from './components/Login'
+import Register from './components/Register'
+import AudioPlayer from './components/AudioPlayer'
 
 function App() {
   const [boards, setBoards] = useState([])
-  const [songs, setSongs] = useState([]);
+  const [songs, setSongs] = useState([])
+  const [user, setUser] = useState(null)
+
+  const checkToken = async () => {
+    const user = await CheckSession()
+    setUser(user)
+  }
+  useEffect(() => {
+    const token = localStorage.getItem('token')
+    if(token)  {
+      checkToken()
+    }
+  }, [])
+
+  const handleLogOut = () => {
+    setUser(null)
+    localStorage.clear()
+  }
 
   const getBoards = async () => {
     let res = await Client.get('/boards')
@@ -38,7 +57,10 @@ function App() {
   return (
     <div>
       <header>
-        <Nav />
+        <Nav 
+          user={user}
+          handleLogOut={handleLogOut}
+        />
       </header>
       <main>
         <Routes>
@@ -47,8 +69,10 @@ function App() {
           <Route path='/boards/:id' element={<Board boards={boards} />} />
           <Route path='/band' element={<Band />} />
           <Route path='/music' element={<Music songs={songs}/>} />
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<Login setUser={setUser}/>} />
+          <Route path='/register' element={<Register />} />
         </Routes>
+        <AudioPlayer />
       </main>
       <footer></footer>
     </div>
