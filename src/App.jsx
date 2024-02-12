@@ -11,11 +11,13 @@ import Login from './components/Login'
 import Register from './components/Register'
 import Songs from './components/Songs'
 import Shows from './components/Shows'
+import PostForm from './components/PostForm'
 
 
 function App() {
   const [boards, setBoards] = useState([])
   const [user, setUser] = useState(null)
+ 
 
   const checkToken = async () => {
     const user = await CheckSession()
@@ -38,13 +40,14 @@ function App() {
     console.log(res)
     setBoards(res.data)
   }
- 
+  
   useEffect(() => {
     getBoards()
   }, [])
 
-
  
+
+
   
  
 
@@ -60,12 +63,13 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/boards' element={<Boards boards={boards} />} />
-          <Route path='/boards/:id' element={<Board boards={boards} />} />
+          <Route path='/boards/:id' element={<Board boards={boards} user={user}/>} />
           <Route path='/band' element={<Band />} />
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/register' element={<Register />} />
           <Route path='/songs' element={<Songs />} />
           <Route path='/shows' element={<Shows />} />
+          <Route path='/posts' element={<PostForm />} />
         </Routes>
       </main>
       <footer></footer>

@@ -4,26 +4,26 @@ import { useParams } from 'react-router-dom'
 import Client from '../services/api'
 import PostForm from './PostForm'
 
-const Board = ({boards, user}) => {
+const Show = ({shows, user}) => {
     let { id } = useParams()
-    const [board, setBoard] = useState('')
-    const getBoard = async () => {
-     let res = await Client.get(`boards/${id}`)
-     setBoard(res.data)
+    const [show, setShow] = useState('')
+    const getShow = async () => {
+     let res = await Client.get(`shows/${id}`)
+     setShow(res.data)
 
     }
     useEffect(() => {
-        getBoard()
-     }, [boards, id])
+        getShow()
+     }, [shows, id])
 
 
-  return board ? (
+  return show ? (
     <div>
         <div>
-           <h1>{board.title}</h1>
+           <h1>The Strokes at {show.Venue}</h1>
            <ul>
-           {board.posts.map(post => (
-                        <li key={post._id}>{post.entry}</li>
+           {show.set.map(set => (
+                        <li key={set._id}>{set.songs}</li>
                     ))}
            </ul>
            <div>
@@ -36,4 +36,4 @@ const Board = ({boards, user}) => {
   ): null
 }
 
-export default Board
+export default Show
