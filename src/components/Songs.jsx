@@ -1,7 +1,7 @@
 import React from 'react';
 import { tracks } from '../data/tracks';
 
-const AudioPlayer = () => {
+const Songs = () => {
   return (
     <div>
         <div>
@@ -20,4 +20,4 @@ const AudioPlayer = () => {
   );
 };
 
-export default AudioPlayer;
+export default Songs;

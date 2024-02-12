@@ -45,12 +45,6 @@ function App() {
     getBoards()
   }, [])
 
- 
-
-
-  
- 
-
   return (
     <div>
       <header>
