@@ -12,6 +12,8 @@ import Register from './components/Register'
 import Songs from './components/Songs'
 import Shows from './components/Shows'
 import PostForm from './components/PostForm'
+import Show from './components/Show'
+import ShowForm from './components/ShowForm'
 
 
 function App() {
@@ -44,7 +46,17 @@ function App() {
   useEffect(() => {
     getBoards()
   }, [])
-
+  const[shows, setShows ]  = useState([])
+  const getShows = async () => {
+      let res = await Client.get('/shows')
+      console.log(res)
+      setShows(res.data)
+    }
+    
+    useEffect(() => {
+      getShows()
+    }, [])
+  
   return (
     <div>
       <header>
@@ -62,8 +74,10 @@ function App() {
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/register' element={<Register />} />
           <Route path='/songs' element={<Songs />} />
-          <Route path='/shows' element={<Shows />} />
-          <Route path='/posts' element={<PostForm />} />
+          <Route path='/shows' element={<Shows shows={shows}/>} />
+          <Route path='/shows/:id' element={<Show shows={shows}/>} />
+          <Route path='/posts' element={<PostForm shows={shows}/>} />
+          <Route path='/add-show' element={<ShowForm />} />
         </Routes>
       </main>
       <footer></footer>
