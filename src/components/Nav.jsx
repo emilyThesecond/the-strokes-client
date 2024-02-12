@@ -6,7 +6,7 @@ const Nav = ({ user, handleLogOut }) => {
         <div className='navbar'>
             {/* change to the strokes logo */}
             <NavLink to='/'>Home</NavLink>
-            <NavLink to='/music'>Music</NavLink>
+            <NavLink to='/songs'>Music</NavLink>
             <NavLink to='/band'>The Band</NavLink>
             <NavLink to='/boards'>Boards</NavLink>
             {user ? (
