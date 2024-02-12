@@ -7,14 +7,13 @@ import Client from './services/api'
 import Board from './components/Board'
 import Nav from './components/Nav'
 import Band from './components/Band'
-import Music from './components/Music'
 import Login from './components/Login'
 import Register from './components/Register'
-import AudioPlayer from './components/AudioPlayer'
+import Songs from './components/Songs'
+
 
 function App() {
   const [boards, setBoards] = useState([])
-  const [songs, setSongs] = useState([])
   const [user, setUser] = useState(null)
 
   const checkToken = async () => {
@@ -38,18 +37,12 @@ function App() {
     console.log(res)
     setBoards(res.data)
   }
-  const getSongs = async () => {
-    let res = await Client.get('/songs')
-    console.log(res)
-    setSongs(res.data)
-  }
+ 
   useEffect(() => {
     getBoards()
   }, [])
 
-  useEffect(() => {
-      getSongs();
-  }, []);
+
  
   
  
@@ -68,11 +61,10 @@ function App() {
           <Route path='/boards' element={<Boards boards={boards} />} />
           <Route path='/boards/:id' element={<Board boards={boards} />} />
           <Route path='/band' element={<Band />} />
-          <Route path='/music' element={<Music songs={songs}/>} />
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/register' element={<Register />} />
+          <Route path='/songs' element={<Songs />} />
         </Routes>
-        <AudioPlayer />
       </main>
       <footer></footer>
     </div>
