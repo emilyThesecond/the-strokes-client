@@ -19,7 +19,7 @@ import ShowForm from './components/ShowForm'
 function App() {
   const [boards, setBoards] = useState([])
   const [user, setUser] = useState(null)
- 
+  
 
   const checkToken = async () => {
     const user = await CheckSession()
@@ -46,6 +46,7 @@ function App() {
   useEffect(() => {
     getBoards()
   }, [])
+
   const[shows, setShows ]  = useState([])
   const getShows = async () => {
       let res = await Client.get('/shows')
@@ -74,10 +75,9 @@ function App() {
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/register' element={<Register />} />
           <Route path='/songs' element={<Songs />} />
-          <Route path='/shows' element={<Shows shows={shows}/>} />
+          <Route path='/shows' element={<Shows shows={shows} getShows={getShows}/>} />
           <Route path='/shows/:id' element={<Show shows={shows}/>} />
           <Route path='/posts' element={<PostForm shows={shows}/>} />
-          <Route path='/add-show' element={<ShowForm />} />
         </Routes>
       </main>
       <footer></footer>

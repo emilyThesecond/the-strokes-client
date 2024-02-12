@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Client from '../services/api'
 import { useState, useEffect } from 'react'
+import ShowForm from './ShowForm'
 
-const Shows = ({ shows }) => {
+const Shows = ({ shows, getShows }) => {
 
   return (
     <div>
@@ -19,9 +20,8 @@ const Shows = ({ shows }) => {
       ))}
       </div>
       <h2>Dont see a show?</h2>
-      <Link to='/add-show'>
-      <h3>Add a Show</h3>
-      </Link>
+    
+      <ShowForm getShows={getShows}/>
     </div>
   )
 }
