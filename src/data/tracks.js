@@ -11,5 +11,4 @@ export const tracks = [
       src: selfless,
       author: 'The Strokes',
     },
-   
   ]

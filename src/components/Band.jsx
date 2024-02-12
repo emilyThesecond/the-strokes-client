@@ -4,6 +4,7 @@ const Band = () => {
   return (
     <div>
       <h1>The Band</h1>
+      <h2>Angelica</h2>
     </div>
   )
 }

@@ -9,6 +9,7 @@ const Nav = ({ user, handleLogOut }) => {
             <NavLink to='/songs'>Music</NavLink>
             <NavLink to='/band'>The Band</NavLink>
             <NavLink to='/boards'>Boards</NavLink>
+            <NavLink to='/shows'>Shows</NavLink>
             {user ? (
                 <>
                     <button onClick={handleLogOut}>Logout</button>

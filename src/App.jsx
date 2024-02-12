@@ -10,6 +10,7 @@ import Band from './components/Band'
 import Login from './components/Login'
 import Register from './components/Register'
 import Songs from './components/Songs'
+import Shows from './components/Shows'
 
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/register' element={<Register />} />
           <Route path='/songs' element={<Songs />} />
+          <Route path='/shows' element={<Shows />} />
         </Routes>
       </main>
       <footer></footer>
