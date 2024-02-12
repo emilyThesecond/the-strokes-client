@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import BoardForm from './BoardForm'
 
-const Boards = ({boards}) => {
+const Boards = ({boards, getBoards}) => {
   return (
     <div>
       <h1>boards</h1>
@@ -12,6 +13,9 @@ const Boards = ({boards}) => {
              </Link>
         </div>
       ))}
+      <div>
+        <BoardForm getBoards={getBoards}/>
+      </div>
     </div>
   )
 }

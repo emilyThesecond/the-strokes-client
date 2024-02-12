@@ -69,7 +69,7 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/boards' element={<Boards boards={boards} />} />
+          <Route path='/boards' element={<Boards boards={boards} getBoards={getBoards}/>} />
           <Route path='/boards/:id' element={<Board boards={boards} user={user}/>} />
           <Route path='/band' element={<Band />} />
           <Route path='/login' element={<Login setUser={setUser}/>} />
