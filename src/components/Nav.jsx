@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom';
 const Nav = ({ user, handleLogOut }) => {
     return (
         
-         <div >
-            <p className='entry-header'></p>
+         <div className='nav-container'>
+            <div className='entry-header'></div>
             <div className='navbar'>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/songs'>Music</NavLink>

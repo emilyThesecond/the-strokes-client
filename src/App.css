@@ -5,66 +5,54 @@
   text-align: center;
 }
 :root {
-  background-color: black;
-  color: rgb(214, 199, 199);
+  background-color: rgb(62, 62, 62);
+  /* color: rgb(214, 199, 199); */
+  color: white;
 }
 
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
- .navbar {
+.navbar {
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
   align-items: center;
-  height: 50px;
-  background-color: #a32525;
- }
- .entry-header {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/220px-The_Strokes_by_Roger_Woolman.jpg);
+  height: 8vmin;
+  background-color: black;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  /* margin-top: 30vmin; */
+}
+
+.boards a {
+color: white;
+}
+.navbar a {
+  color: #fff; 
+  text-decoration: none;
+  padding: 0 10px; 
+  font-family:"DM Serif Display", serif;
+  font-size: 3.5vmin;
+}
+.entry-header {
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/220px-The_Strokes_by_Roger_Woolman.jpg); */
+  /* background-image: url(https://ksassets.timeincuk.net/wp/uploads/sites/55/2013/02/2013TheStrokesPA-3734757210113-3.jpg); */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/1920px-The_Strokes_by_Roger_Woolman.jpg);
   background-size: cover;
- }
- @media screen and (max-width: 550px){
+  height: 40vmin;
+}
+@media screen and (max-width: 550px){
   .entry-header {
     height: auto !important;
-    padding: 50px 0 !important;
+    padding: 70px 0 !important;
   }
- }
- 
+}
 
- .button {
+.the-strokes {
+  font-family: "Chonburi", serif;
+  font-size: 10vmin;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -107,4 +95,25 @@
   transform: rotate(160deg);
 }
 
+/* 
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
 
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

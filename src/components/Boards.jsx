@@ -4,7 +4,7 @@ import BoardForm from './BoardForm'
 
 const Boards = ({boards, getBoards}) => {
   return (
-    <div>
+    <div className='boards'>
       <h1>boards</h1>
       {boards.map(board => (
         <div>
