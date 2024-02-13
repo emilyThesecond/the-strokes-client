@@ -1,6 +1,6 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
   /* padding: 2rem; */
   text-align: center;
 }
@@ -20,10 +20,6 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   /* margin-top: 30vmin; */
 }
-
-.boards a {
-color: white;
-}
 .navbar a {
   color: #fff; 
   text-decoration: none;
@@ -31,8 +27,11 @@ color: white;
   font-family:"DM Serif Display", serif;
   font-size: 3.5vmin;
 }
+
+.boards a {
+color: white;
+}
 .entry-header {
-  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/220px-The_Strokes_by_Roger_Woolman.jpg); */
   /* background-image: url(https://ksassets.timeincuk.net/wp/uploads/sites/55/2013/02/2013TheStrokesPA-3734757210113-3.jpg); */
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/1920px-The_Strokes_by_Roger_Woolman.jpg);
   background-size: cover;
@@ -42,6 +41,11 @@ color: white;
   .entry-header {
     height: auto !important;
     padding: 70px 0 !important;
+  }
+  .youtube-song{
+    height: 30px;
+    width: 80%;
+    border-radius: 15px;
   }
 }
 
