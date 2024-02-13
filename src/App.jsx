@@ -14,6 +14,7 @@ import Shows from './components/Shows'
 import PostForm from './components/PostForm'
 import Show from './components/Show'
 import ShowForm from './components/ShowForm'
+import AudioPlayer from './components/AudioPlayer'
 
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
           <Route path='/shows' element={<Shows shows={shows} getShows={getShows}/>} />
           <Route path='/shows/:id' element={<Show shows={shows}/>} />
           <Route path='/posts' element={<PostForm shows={shows}/>} />
+          <Route path='/audio' element={<AudioPlayer />} />
         </Routes>
       </main>
       <footer></footer>

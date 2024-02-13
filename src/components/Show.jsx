@@ -10,12 +10,23 @@ const Show = ({shows}) => {
 
     const getShow = async () => {
      let res = await Client.get(`shows/${id}`)
+     console.log(res.data)
      setShow(res.data)
 
     }
     useEffect(() => {
         getShow()
      }, [shows, id])
+
+     const handleDeleteSet = async (setId) => {
+        try {
+            await Client.delete(`/sets/${setId}`)
+            getShow()
+        } catch (error) {
+            console.error('Error deleting set:', error)
+        }
+    }
+
 
 
   return show ? (
@@ -25,8 +36,11 @@ const Show = ({shows}) => {
            <h1>{show.endTime}</h1>
            <h1>{show.opener}</h1>
            <ul>
+            <h1>SetList</h1>
            {show.set.map(set => (
-                        <li key={set._id}>{set.title}</li>
+                        <li key={set._id}>{set.title}
+                        <button onClick={() => handleDeleteSet(set._id)}>Delete</button>
+                        </li>
                     ))}
            </ul>
            <div>
