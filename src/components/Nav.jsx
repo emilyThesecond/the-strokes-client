@@ -2,7 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Nav = ({ user, handleLogOut }) => {
+    
     return (
+        
         
          <div className='nav-container'>
             <div className='entry-header'></div>
