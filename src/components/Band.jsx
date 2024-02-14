@@ -44,15 +44,18 @@ const Band = () => {
       <div className="band-container">
         {/* Map through each band member and create a card */}
         {members.map((member, index) => (
+        <div> 
+            <h3>{member.name}</h3>
+
           <div key={index} className={`card ${flipped[index] ? 'flipped' : ''}`} onClick={() => toggleFlipped(index)}>
             <div className="front">
               <img src={member.imageUrl} alt={member.name} />
             </div>
             <div className="back">
-              <h2>{member.name}</h2>
               <p>{member.info}</p>
             </div>
           </div>
+        </div>
         ))}
       </div>
     </div>

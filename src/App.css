@@ -90,7 +90,7 @@ color: white;
 }
 
 .back {
-  background-color: #f0f0f0;
+  background-color: #0a0909;
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
