@@ -4,8 +4,16 @@ const AudioPlayer = () => {
     const songs = [
         { title: "You Only Live Once", videoId: "pjmaj-wtAPs"},
         { title: "Selfless", videoId: "1-W6whvn8Bs"},
-        { title: "Ode to the Mets", videoId: "BjC0KUxiMhc"}
-    ];
+        { title: "Ode to the Mets", videoId: "BjC0KUxiMhc"},
+        { title: "Someday", videoId: "knU9gRUWCno"},
+        { title: "Call it Fate, Call it Karma", videoId: "Txn5-dKLFHg"},
+        { title: "Why Are Sundays So Depressing", videoId: "2KSpDNlsVF4"},
+        { title: "What Ever Happened", videoId: "yQOJTLylm-A"},
+        { title: "Threat of Joy", videoId: "Qvhcs93C2x8"},
+        { title: "All The Time", videoId: "GXcRdUTk0SI"},
+        { title: "Welcome To Japan", videoId: "IZg4rz3cIDc"},
+       
+    ]
     
     return (
         <div className="audio-player">
@@ -18,7 +26,7 @@ const AudioPlayer = () => {
                             title="YouTube Video Player"
                             width="100%"
                             height="100"
-                            src={`https://www.youtube.com/embed/${song.videoId}?autoplay=1&controls=1&loop=1&playlist=${song.videoId}&mute=1`}
+                            src={`https://www.youtube.com/embed/${song.videoId}?controls=1&loop=1&playlist=${song.videoId}&mute=1`}
                             allow="autoplay; encrypted-media"
                             className="youtube-song"
                         ></iframe>

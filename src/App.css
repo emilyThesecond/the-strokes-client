@@ -26,8 +26,8 @@
     height: auto;
   }
   .blog-post-image {
-    width: 500px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 500px;
+    height: auto; 
     margin-right: 20px;
   }
   .audio-player {
@@ -36,8 +36,8 @@
 
 .songs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Three items per row */
-    grid-gap: 20px; /* Adjust as needed */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 20px; 
 }
 
 .song-item {
