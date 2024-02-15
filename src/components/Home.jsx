@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div>
       <h1 className='the-strokes'>THE STROKES</h1>
-      <h3>News Board</h3>
       <div>
         {/* Welcome to The Strokes Fan Page. Listen to music, connect with the community, view and add set lists! */}
       {/* <div><iframe width="1043" height="587" src="https://www.youtube.com/embed/1-W6whvn8Bs" title="The Strokes - Selfless (Official Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div> */}

@@ -60,7 +60,7 @@ a {
   padding: 3vmin;
 }
 .youtube-song {
-  border-radius: 30px;
+  height: 10vmin;
 }
 
 .navbar a {
@@ -132,7 +132,7 @@ a {
     background-color: #0a0909;
 }
   .youtube-song{
-    height: 50px;
+    height: 200px;
     width: 80%;
   }
 

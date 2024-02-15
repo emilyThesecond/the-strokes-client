@@ -77,11 +77,11 @@ function App() {
           <Route path='/band' element={<Band />} />
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/register' element={<Register />} />
-          <Route path='/songs' element={<Songs />} />
+          {/* <Route path='/songs' element={<Songs />} /> */}
           <Route path='/shows' element={<Shows shows={shows} getShows={getShows}/>} />
           <Route path='/shows/:id' element={<Show shows={shows}/>} />
           <Route path='/posts' element={<PostForm shows={shows}/>} />
-          <Route path='/audio' element={<AudioPlayer />} />
+          <Route path='/songs' element={<AudioPlayer />} />
         </Routes>
       </main>
       <footer>
