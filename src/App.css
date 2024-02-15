@@ -80,11 +80,7 @@ a {
   }
 
   :root {
-    /* background-image: url(https://i.scdn.co/image/ab67616d00001e02f07ef193e0bb6a238ea37f0a); */
-  /* background-color: #000000; */
-  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc29l_5bK2BnBKAv5nre8LvSAlN6JwtSWSdmwp4cVSul807OIH-HN53R0rQhc4-8EDDHM&usqp=CAU); */
-  /* background-repeat: repeat; */
-  /* background-size: 50px 50px; */
+    background-color: #0a0909;
 }
   .youtube-song{
     height: 50px;
