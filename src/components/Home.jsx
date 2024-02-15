@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -12,7 +13,13 @@ const Home = () => {
     {/* <div> */}
        <div >
         <img className='blog-post-image' src="https://media.bandsintown.com/300x300/16282043.webp" alt="chicago show poster" />
-       
+       <div>
+        <h2>New Show In Chicago!</h2>
+        <h4>March 15, 2024</h4>
+        <Link to="https://go.seated.com/tour-events/2c6a5e7b-2a3a-4c84-8600-ed23cdfde27c">
+        <button>Get Tickets</button>
+        </Link>
+       </div>
        </div>
     </div>
     </div>

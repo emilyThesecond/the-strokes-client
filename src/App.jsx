@@ -15,6 +15,8 @@ import PostForm from './components/PostForm'
 import Show from './components/Show'
 import ShowForm from './components/ShowForm'
 import AudioPlayer from './components/AudioPlayer'
+import Footer from './components/Footer'
+
 
 
 function App() {
@@ -82,7 +84,9 @@ function App() {
           <Route path='/audio' element={<AudioPlayer />} />
         </Routes>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   )
 }
