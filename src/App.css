@@ -30,6 +30,24 @@
     height: auto; /* Maintain aspect ratio */
     margin-right: 20px;
   }
+  .audio-player {
+    margin: 20px;
+}
+
+.songs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Three items per row */
+    grid-gap: 20px; /* Adjust as needed */
+}
+
+.song-item {
+    /* border: 1px solid #000000; */
+    padding: 10px;
+}
+.youtube-song {
+  height: 25vmin;
+  width: 20vmin;
+}
  }
 
 
@@ -59,9 +77,9 @@ a {
   height: 40vmin;
   padding: 3vmin;
 }
-.youtube-song {
-  height: 10vmin;
-}
+/* .youtube-song {
+  height: 40vmin;
+} */
 
 .navbar a {
   color: #fff; 
