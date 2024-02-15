@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom';
 const Nav = ({ user, handleLogOut }) => {
     return (
         <div className='nav-container'>
+            <div>
+                <h1 className='strokes-logo'>THE STROKES</h1>
+            </div>
             <div className='entry-header'></div>
             <div className='navbar-icons'>
                 <NavLink to='/'><i className="fas fa-home"></i></NavLink>
