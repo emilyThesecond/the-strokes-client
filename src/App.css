@@ -48,16 +48,19 @@ a {
   font-family:"DM Serif Display", serif;
   font-size: 3vmin;
 }
-.strokes-logo {
+.menu-toggle {
   display: none;
 }
-
 @media screen and (max-width: 550px){
   .nav-container {
     position: relative;
   }
+  .blog-post {
+    width: 80vmin;
+  }
   
   .menu-toggle {
+    display: block;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -135,6 +138,7 @@ a {
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
+  transition: 0.8s;
 }
 
 .front {

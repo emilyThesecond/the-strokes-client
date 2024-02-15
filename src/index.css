@@ -71,11 +71,13 @@ button:focus-visible {
   font-weight: 400;
   font-style: normal;
 } */
-.strokes-logo {
+.the-strokes {
   font-family: "Monoton", sans-serif;
   font-size: 11vmin;
-  color: brown;
+  color: rgb(226, 226, 226);
   text-decoration:overline;
+  font-weight: 400;
+  font-style: normal;
 }
 /* .fans-logo {
   font-family: "Monoton", sans-serif;
