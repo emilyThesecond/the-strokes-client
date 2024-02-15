@@ -9,9 +9,7 @@
   /* color: rgb(214, 199, 199); */
   color: white;
 }
-.nav-container i {
-  display: none;
-}
+
 
 .navbar {
   display: flex;
@@ -55,60 +53,51 @@ a {
 }
 
 @media screen and (max-width: 550px){
-  .nav-container i {
-    display:block;
-  }
   .nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    overflow-x: hidden;
-    transition: width 0.5s;
-  }
-  
-  .nav-container.open {
-    width: 200px; /* Width of the slide-out menu */
+    position: relative;
   }
   
   .menu-toggle {
     position: absolute;
     top: 20px;
-    left: 20px;
+    right: 20px;
     cursor: pointer;
   }
   
   .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
-    padding: 20px;
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    right: 0;
     background-color: black;
+    padding: 10px;
+    border-radius: 5px;
   }
   
   .navbar a {
     color: white;
     text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
   }
   
-  .navbar a:hover {
-    color: gray;
+  .navbar.open {
+    display: block;
   }
+  
+  /* Hamburger icon animation */
+  .fa-bars, .fa-times {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fa-times {
+    transform: rotate(90deg);
+  }
+  
+  
   .entry-header {
     height: auto !important;
     padding: 20vmin 0 !important;
-  }
-  .the-strokes{
-    color: rgb(210, 72, 72);
-    /* font-family: .monotone-regular; */
-  }
-  .strokes-logo {
-    display: block;
   }
 
   :root {
