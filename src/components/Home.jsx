@@ -15,7 +15,7 @@ const Home = () => {
         <img className='blog-post-image' src="https://media.bandsintown.com/300x300/16282043.webp" alt="chicago show poster" />
        <div>
         <h2>New Show In Chicago!</h2>
-        <h4>March 15, 2024</h4>
+        <h5 className='date'>March 15, 2024</h5>
         <Link to="https://go.seated.com/tour-events/2c6a5e7b-2a3a-4c84-8600-ed23cdfde27c">
         <button>Get Tickets</button>
         </Link>
@@ -26,7 +26,7 @@ const Home = () => {
        <div>
         <div className='post-words'>
         <h2>New Shirt Drop!</h2>
-        <h4>March 15, 2024</h4>
+        <h5 className='date'>March 15, 2024</h5>
         <Link to="https://shop.thestrokes.com/collections/merch/products/the-strokes-s-tee?fbclid=IwAR1hti895NaS6NzsbASs5Deu06MqdOlq9yweM-SHfjeUFYfpomM0no4MTc0&variant=47886503018727">
         <button>Buy T-Shirt</button>
         </Link>

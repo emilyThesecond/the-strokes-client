@@ -56,6 +56,8 @@ const Board = ({ boards, user }) => {
                 {board.posts.map(post => (
                     <div key={post._id}>
                         <li>{post.entry}</li>
+                        {user && post.user === user.id && (
+                            <>
                         <button onClick={() => handleDelete(board._id, post._id)} className='button'>
                         <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -96,6 +98,8 @@ const Board = ({ boards, user }) => {
   </svg>
                         </button>
                         <button onClick={() => { setPostIdToUpdate(post._id); openModal() }}>Edit</button>
+                        </>
+)}
                     </div>
                 ))}
             </ul>

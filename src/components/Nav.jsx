@@ -26,6 +26,7 @@ const Nav = ({ user, handleLogOut }) => {
                     <NavLink to='/login' onClick={toggleMenu}>Login</NavLink>
                 )}
             </div>
+            {/* <h1 className='the-strokes'>THE STROKES</h1> */}
             
         </div>
     );

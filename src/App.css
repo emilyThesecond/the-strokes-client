@@ -9,6 +9,9 @@
   /* color: rgb(214, 199, 199); */
   color: white;
 }
+.date {
+  color: grey;
+}
  .blog-post {
   margin-bottom: 10vmin;
   border-bottom: 2px white;
@@ -146,9 +149,6 @@ a {
     padding: 20vmin 0 !important;
   }
 
-  :root {
-    background-color: #0a0909;
-}
   .youtube-song{
     height: 200px;
     width: 80%;
