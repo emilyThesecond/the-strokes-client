@@ -10,7 +10,7 @@
   color: white;
 }
 
-.navbar-words {
+.navbar {
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
@@ -33,18 +33,18 @@ a {
   /* background-image: url(https://ksassets.timeincuk.net/wp/uploads/sites/55/2013/02/2013TheStrokesPA-3734757210113-3.jpg); */
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/The_Strokes_by_Roger_Woolman.jpg/1920px-The_Strokes_by_Roger_Woolman.jpg);
   background-size: cover;
-  height: 45vmin;
-  /* padding: 3vmin; */
+  height: 40vmin;
+  padding: 3vmin;
 }
 .youtube-song {
   border-radius: 30px;
 }
 
-.navbar-words i {
+/* .navbar {
   display: none;
   font-size: 24px;
-}
-.navbar-words a {
+} */
+.navbar a {
   color: #fff; 
   text-decoration: none;
   padding: 0 10px; 
@@ -64,12 +64,11 @@ a {
     display: none;
   }
   .entry-header {
-    /* height: auto !important;
-    padding: 20vmin 0 !important; */
-    /* Remove background image for screens <= 550px */
-    background-image: none !important;
     height: auto !important;
-    padding: 0vmin 0 !important;
+    padding: 20vmin 0 !important;
+    /* background-image: none !important; */
+    /* height: auto !important; */
+    /* padding: 0vmin 0 !important; */
   }
   .the-strokes{
     color: rgb(210, 72, 72);
