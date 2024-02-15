@@ -9,6 +9,9 @@
   /* color: rgb(214, 199, 199); */
   color: white;
 }
+.nav-container i {
+  display: none;
+}
 
 .navbar {
   display: flex;
@@ -40,10 +43,6 @@ a {
   border-radius: 30px;
 }
 
-/* .navbar {
-  display: none;
-  font-size: 24px;
-} */
 .navbar a {
   color: #fff; 
   text-decoration: none;
@@ -54,21 +53,55 @@ a {
 .strokes-logo {
   display: none;
 }
-@media screen and (min-width: 551px){
-  .navbar-icons {
-    display: none;
-  }
-}
+
 @media screen and (max-width: 550px){
-  .navbar-words{
-    display: none;
+  .nav-container i {
+    display:block;
+  }
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    overflow-x: hidden;
+    transition: width 0.5s;
+  }
+  
+  .nav-container.open {
+    width: 200px; /* Width of the slide-out menu */
+  }
+  
+  .menu-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    color: gray;
   }
   .entry-header {
     height: auto !important;
     padding: 20vmin 0 !important;
-    /* background-image: none !important; */
-    /* height: auto !important; */
-    /* padding: 0vmin 0 !important; */
   }
   .the-strokes{
     color: rgb(210, 72, 72);
@@ -85,23 +118,7 @@ a {
     height: 50px;
     width: 80%;
   }
-  .navbar-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 18vmin;
-    background-color: rgb(104, 101, 101);
-    box-shadow: 0px -5px 10px rgba(94, 92, 92, 0.5);
-  }
-  .navbar-icons i {
-    /* display: inline-block; */
-    font-size: 33px; /* Adjust icon size */
-    margin: 15px 10px; /* Add space between icons */
-    color: rgb(255, 255, 255);
-  }
+
 }
 
 
