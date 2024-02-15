@@ -26,6 +26,7 @@ const Nav = ({ user, handleLogOut }) => {
                     <NavLink to='/login' onClick={toggleMenu}>Login</NavLink>
                 )}
             </div>
+            
         </div>
     );
 };
