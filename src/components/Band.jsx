@@ -13,8 +13,8 @@ const Band = () => {
   };
 
   return (
-    <div>
-      <h1>The Band</h1>
+    <div className='band-page'>
+      <h1 className='the-band'>The Band</h1>
       <div className="band-container">
         {/* Map through each band member and create a card */}
         {members.map((member, index) => (

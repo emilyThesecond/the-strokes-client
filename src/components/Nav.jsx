@@ -15,11 +15,11 @@ const Nav = ({ user, handleLogOut }) => {
                 <i className={`fas fa-${isOpen ? 'times' : 'bars'}`}></i>
             </div>
             <div className={`navbar ${isOpen ? 'open' : ''}`}>
-                <NavLink to='/' onClick={toggleMenu}>Home</NavLink>
-                <NavLink to='/songs' onClick={toggleMenu}>Music</NavLink>
-                <NavLink to='/band' onClick={toggleMenu}>The Band</NavLink>
-                <NavLink to='/boards' onClick={toggleMenu}>Boards</NavLink>
-                <NavLink to='/shows' onClick={toggleMenu}>Shows</NavLink>
+                <NavLink activeClassName='active' to='/'  onClick={toggleMenu}>Home</NavLink>
+                <NavLink activeClassName='active' to='/songs' onClick={toggleMenu}>Music</NavLink>
+                <NavLink activeClassName='active' to='/band' onClick={toggleMenu}>The Band</NavLink>
+                <NavLink activeClassName='active' to='/boards' onClick={toggleMenu}>Boards</NavLink>
+                <NavLink activeClassName='active' to='/shows' onClick={toggleMenu}>Shows</NavLink>
                 {user ? (
                     <button onClick={handleLogOut}>Logout</button>
                 ) : (

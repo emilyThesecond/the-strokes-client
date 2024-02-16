@@ -33,8 +33,7 @@ const Register = () => {
     navigate('/signin')
   }
 
-  return (
-    <div className="signin col">
+  return (<div className="signin col">
       <div className="card-overlay centered">
         <form className="col" onSubmit={handleSubmit}>
           <div className="input-wrapper">
