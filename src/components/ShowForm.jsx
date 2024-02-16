@@ -28,7 +28,7 @@ const ShowForm = (props) => {
         <div>
           <h1>Add a show</h1>
           <form onSubmit={handleSubmit}>
-          <input type="text" value={newShow.venue} onChange={handleChange} name='venue' placeholder='name' />
+          <input type="text" value={newShow.venue} onChange={handleChange} name='venue' placeholder='venue' />
           <input type="text" value={newShow.startTime} onChange={handleChange} name='startTime' placeholder='startTime' />
           <input type="text" value={newShow.endTime} onChange={handleChange} name='endTime' placeholder='endTime' />
           <input type="text" value={newShow.opener} onChange={handleChange} name='opener' placeholder='opener' />

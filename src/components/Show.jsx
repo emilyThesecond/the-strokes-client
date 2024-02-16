@@ -35,14 +35,19 @@ const Show = ({shows}) => {
            <h1>{show.startTime}</h1>
            <h1>{show.endTime}</h1>
            <h1>{show.opener}</h1>
+           <div>
+
+           </div>
+           <div className='paper-list'>
            <ul>
             <h1>SetList</h1>
            {show.set.map(set => (
-                        <li key={set._id}>{set.title}
+               <li key={set._id}>{set.title}
                         <button onClick={() => handleDeleteSet(set._id)}>Delete</button>
                         </li>
                     ))}
            </ul>
+            </div>
            <div>
             <SetForm show={show}  getShow={getShow}/>
            </div>
