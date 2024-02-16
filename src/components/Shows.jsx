@@ -8,7 +8,7 @@ const Shows = ({ shows, getShows }) => {
 
   return (
     <div>
-      <h1>shows</h1>
+      <h1>Shows</h1>
       <div>
 
       {shows.map(show => (

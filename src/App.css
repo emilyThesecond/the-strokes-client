@@ -325,29 +325,15 @@ a {
   display: flex;
   justify-content: center;
 }
-
-
-
 .boards h1 {
   font-size: 24px;
   /* margin-bottom: 20px; */
 }
-
-.boards h3 {
-  font-size: 18px;
-  /* margin-bottom: 10px; */
-  border: 2px solid white;
-
-}
-
 .boards a {
   color: #ffffff; 
   text-decoration: none;
 }
 
-.board {
-  padding: 0px 0px;
-}
 
 .footer {
   bottom: 0;
@@ -362,18 +348,17 @@ body {
 }
 
 .paper-list {
-  margin: 20px auto; /* Adjust margin as needed */
-  width: 70vmin; /* Adjust width as needed */
-  background-color: #f9f9f9; /* Background color of the "paper" */
-  border-radius: 10px; /* Border radius for rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth effect */
-  padding: 20px; /* Padding inside the paper */
+  margin: 20px auto;
+  width: 70vmin; 
+  background-color: #f9f9f9; 
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(227, 227, 227, 0.3); 
+  padding: 20px; 
   color: black;
 }
 
 ul {
-  /* list-style-type: none; Remove default list styles */
-  padding: 15px; /* Remove default padding */
+  padding: 15px; 
   margin-left: 15px;
 }
 ul.a {
@@ -382,10 +367,64 @@ ul.a {
 }
 
 li {
-  margin-bottom: 10px; /* Adjust spacing between list items */
-  padding: 10px; /* Padding inside each list item */
-  background-color: f9f9f9; /* Background color for each list item */
-  border-radius: 5px; /* Border radius for rounded corners */
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: f9f9f9;
   border-bottom: 2px solid blue;
   font-size: 30px;
 }
+.signin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.card-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5vmin;
+  border-radius: 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.input-wrapper {
+  margin-bottom: 15px;
+  padding-right: 4vmin;
+}
+
+.input-wrapper label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 2vmin;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+

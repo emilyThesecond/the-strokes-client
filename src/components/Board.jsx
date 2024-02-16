@@ -24,7 +24,7 @@ const Board = ({ boards, user }) => {
         if (window.confirm('Are you sure you want to delete this post?')) {
             try {
                 await Client.delete(`/boards/${boardId}/posts/${postId}`)
-                getBoard();
+                getBoard()
             } catch (error) {
                 console.error("Error deleting post:", error)
             }

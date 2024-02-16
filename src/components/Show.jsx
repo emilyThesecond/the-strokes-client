@@ -10,7 +10,6 @@ const Show = ({shows}) => {
 
     const getShow = async () => {
      let res = await Client.get(`shows/${id}`)
-     console.log(res.data)
      setShow(res.data)
 
     }
@@ -32,9 +31,10 @@ const Show = ({shows}) => {
   return show ? (
     <div>
         <div>
-           <h1>{show.startTime}</h1>
-           <h1>{show.endTime}</h1>
-           <h1>{show.opener}</h1>
+            <h1>The Strokes At {show.venue}</h1>
+           <h3>Start Time: {show.startTime}</h3>
+           <h3>End Time: {show.endTime}</h3>
+           <h3>Opener: {show.opener}</h3>
            <div>
 
            </div>

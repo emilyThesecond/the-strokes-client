@@ -47,16 +47,16 @@ const SignIn = (props) => {
               required
             />
           </div>
-          <button disabled={!formValues.email || !formValues.password}>
+          <button className='register-btn' disabled={!formValues.email || !formValues.password}>
             Sign In
           </button>
         </form>
-      </div>
     <div>
       <h3>No Account?</h3>
       <Link to='/register'>Make an account</Link>
 
     </div>
+      </div>
     </div>
   )
 }
