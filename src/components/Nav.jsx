@@ -15,19 +15,18 @@ const Nav = ({ user, handleLogOut }) => {
                 <i className={`fas fa-${isOpen ? 'times' : 'bars'}`}></i>
             </div>
             <div className={`navbar ${isOpen ? 'open' : ''}`}>
-                <NavLink className='navLink' to='/'  onClick={toggleMenu}>Home</NavLink>
-                <NavLink className='navLink'  to='/songs' onClick={toggleMenu}>Music</NavLink>
-                <NavLink className='navLink'  to='/band' onClick={toggleMenu}>The Band</NavLink>
-                <NavLink className='navLink'  to='/boards' onClick={toggleMenu}>Boards</NavLink>
-                <NavLink  className='navLink' to='/shows' onClick={toggleMenu}>Shows</NavLink>
+                <NavLink className='navLink' to='/' onClick={toggleMenu}>Home</NavLink>
+                <NavLink className='navLink' to='/songs' onClick={toggleMenu}>Music</NavLink>
+                <NavLink className='navLink' to='/band' onClick={toggleMenu}>The Band</NavLink>
+                <NavLink className='navLink' to='/boards' onClick={toggleMenu}>Boards</NavLink>
+                <NavLink className='navLink' to='/shows' onClick={toggleMenu}>Shows</NavLink>
                 {user ? (
                     <button onClick={handleLogOut}>Logout</button>
                 ) : (
                     <NavLink className='navLink' to='/login' onClick={toggleMenu}>Login</NavLink>
                 )}
             </div>
-            {/* <h1 className='the-strokes'>THE STROKES</h1> */}
-            
+
         </div>
     );
 };

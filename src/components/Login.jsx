@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 const SignIn = (props) => {
-  
+
   let navigate = useNavigate()
 
   const [formValues, setFormValues] = useState({ email: '', password: '' })
@@ -51,11 +51,11 @@ const SignIn = (props) => {
             Sign In
           </button>
         </form>
-    <div>
-      <h3>No Account?</h3>
-      <Link to='/register'>Make an account</Link>
+        <div>
+          <h3>No Account?</h3>
+          <Link to='/register'>Make an account</Link>
 
-    </div>
+        </div>
       </div>
     </div>
   )
