@@ -52,10 +52,10 @@ const Board = ({ boards, user }) => {
     return board ? (
         <div>
             <h1>{board.title}</h1>
-            <ul>
+            <div>
                 {board.posts.map(post => (
                     <div key={post._id}>
-                        <li>{post.entry}</li>
+                        <h2 className='board-entry'>{post.entry}</h2>
                         {user && post.user === user.id && (
                             <>
                         <button onClick={() => handleDelete(board._id, post._id)} className='button'>
@@ -102,7 +102,7 @@ const Board = ({ boards, user }) => {
 )}
                     </div>
                 ))}
-            </ul>
+            </div>
             <PostForm board={board} user={user} getBoard={getBoard} />
             {showModal && (
                 <Modal closeModal={closeModal}>

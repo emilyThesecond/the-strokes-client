@@ -22,7 +22,7 @@ const BoardForm = (props) => {
 
 
     return (
-        <div >
+        <div className='board-form2'>
           <h3>Add a Discussion Board</h3>
           <div className='board-form'>
 

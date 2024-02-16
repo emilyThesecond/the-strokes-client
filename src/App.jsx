@@ -16,8 +16,7 @@ import Show from './components/Show'
 import ShowForm from './components/ShowForm'
 import AudioPlayer from './components/AudioPlayer'
 import Footer from './components/Footer'
-
-
+// Hi John and Santiago! Thank you so much for all of your support, you're the best!
 
 function App() {
   const [boards, setBoards] = useState([])
@@ -77,7 +76,7 @@ function App() {
           <Route path='/band' element={<Band />} />
           <Route path='/login' element={<Login setUser={setUser}/>} />
           <Route path='/register' element={<Register />} />
-          {/* <Route path='/songs' element={<Songs />} /> */}
+          <Route path='/songs' element={<Songs />} />
           <Route path='/shows' element={<Shows shows={shows} getShows={getShows}/>} />
           <Route path='/shows/:id' element={<Show shows={shows}/>} />
           <Route path='/posts' element={<PostForm shows={shows}/>} />

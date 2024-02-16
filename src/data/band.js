@@ -23,6 +23,5 @@ export const members = [
       name: 'Nikolai Fraiture',
       info: 'Nikolai Philippe Fraiture is an American musician best known as the bassist of the rock band The Strokes. Since co-founding the band in 1998, he has released six studio albums with them.',
       imageUrl: 'https://i.pinimg.com/736x/44/f0/83/44f083ac9822a30f887780709b59e63e.jpg'
-      // imageUrl: 'https://i.discogs.com/B0taAypCE9FNfqViJ1cyQTV0n6vZmSK-qhToEBv2Kmg/rs:fit/g:sm/q:90/h:600/w:398/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQzMDEw/NS0xMTYwMDc3Nzk3/LmdpZg.jpeg'
     }
   ];

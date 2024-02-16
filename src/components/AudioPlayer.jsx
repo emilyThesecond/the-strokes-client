@@ -26,7 +26,7 @@ const AudioPlayer = () => {
                             title="YouTube Video Player"
                             width="100%"
                             height="100"
-                            src={`https://www.youtube.com/embed/${song.videoId}?controls=1&loop=1&playlist=${song.videoId}&mute=1`}
+                            src={`https://www.youtube.com/embed/${song.videoId}?controls=1&loop=1&playlist=${song.videoId}`}
                             allow="autoplay; encrypted-media"
                             className="youtube-song"
                         ></iframe>
