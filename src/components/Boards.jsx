@@ -5,7 +5,9 @@ import BoardForm from './BoardForm'
 const Boards = ({boards, getBoards}) => {
   return (
     <div className='boards'>
-      <h1>boards</h1>
+      <h1 className='boards-heading'>Discussion Boards</h1>
+
+      <div className='board'>
       {boards.map(board => (
         <div>
             <Link to={`${board._id}`}>
@@ -13,6 +15,8 @@ const Boards = ({boards, getBoards}) => {
              </Link>
         </div>
       ))}
+
+      </div>
       <div>
         <BoardForm getBoards={getBoards}/>
       </div>

@@ -24,7 +24,7 @@ const BoardForm = (props) => {
     return (
         <div >
           <h3>Add a Discussion Board</h3>
-          <div className='board-name'>
+          <div className='board-form'>
 
           <form className='subscribe-form' onSubmit={handleSubmit}>
           <input className='subscribe-input' type="text" value={newBoard.title} onChange={handleChange} name='title' placeholder='topic' />
