@@ -21,7 +21,7 @@ const Nav = ({ user, handleLogOut }) => {
                 <NavLink className='navLink' to='/boards' onClick={toggleMenu}>Boards</NavLink>
                 <NavLink className='navLink' to='/shows' onClick={toggleMenu}>Shows</NavLink>
                 {user ? (
-                    <button onClick={handleLogOut}>Logout</button>
+                    <NavLink onClick={handleLogOut}>Logout</NavLink>
                 ) : (
                     <NavLink className='navLink' to='/login' onClick={toggleMenu}>Login</NavLink>
                 )}
