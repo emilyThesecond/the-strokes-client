@@ -18,7 +18,7 @@ const Home = () => {
                 </div>
                 <div className='blog-post'>
                     {/* <img className='blog-post-image' src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/385285815_18390896269011862_2663206980847649250_n.jpg?stp=dst-jpg_s1080x2048&_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=cRJvNwZ0W0YAX8kpBwf&_nc_ht=scontent-ord5-1.xx&oh=00_AfCqpNey-_Z1qxWM2YwOeWQmhCvbARDc5PQ4MhAQQEwkBg&oe=65D257A5" alt="new t-shirt" /> */}
-                    <img className='blog-post-image' src="https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/385285815_18390896269011862_2663206980847649250_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=Oeb7MRnU7scAX--is97&_nc_ht=scontent-ord5-1.xx&oh=00_AfBVk8aBc97D_cQ4tBQIcrtJTkGlYKXdzQg5lsdJ1vJ4mQ&oe=65D84665" />
+                    <img className='blog-post-image' src="https://shop.thestrokes.com/cdn/shop/files/STK-S-symbol_480x480.png?v=1696449299" />
                     <div>
                         <div className='post-words'>
                             <h2>New Shirt Drop!</h2>
