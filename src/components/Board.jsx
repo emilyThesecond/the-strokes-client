@@ -55,7 +55,7 @@ const Board = ({ boards, user }) => {
             <div>
                 {board.posts.map(post => (
                     <div key={post._id}>
-                        <h2 className='board-entry'>{post.entry}</h2>
+                        <h2 className='board-entry'>USER: {post.entry}</h2>
                         {user && post.user === user.id && (
                             <>
                                 <button onClick={() => handleDelete(board._id, post._id)} className='button'>

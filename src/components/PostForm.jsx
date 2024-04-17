@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import Client from '../services/api';
+import { Link } from 'react-router-dom';
 
 const PostForm = ({ board, user, getBoard }) => {
     const [entry, setEntry] = useState('');
@@ -9,16 +10,15 @@ const PostForm = ({ board, user, getBoard }) => {
         const data = {
             entry,
             user: user.id,
-        }
+        };
         try {
-            await Client.post(`/boards/${board._id}/posts`, data)
-            setEntry('')
-            getBoard()
+            await Client.post(`/boards/${board._id}/posts`, data);
+            setEntry('');
+            getBoard();
         } catch (error) {
-            console.error('Error posting:', error)
+            console.error('Error posting:', error);
         }
-    }
-
+    };
 
     return (
         <form onSubmit={handleSubmit}>
@@ -28,9 +28,15 @@ const PostForm = ({ board, user, getBoard }) => {
                 placeholder="Write your post..."
                 required
             />
-            <button type="submit">Post</button>
+            {user ? ( // Check if user is logged in
+                <button type="submit">Post</button>
+            ) : (
+                <Link to='/login' >
+                <p className='login-notice'>Please log in to post</p>
+                </Link>
+            )}
         </form>
-    )
-}
+    );
+};
 
 export default PostForm;
