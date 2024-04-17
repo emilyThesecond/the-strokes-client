@@ -7,9 +7,9 @@ const Boards = ({ boards, getBoards }) => {
         <div className='boards'>
             <h1 className='boards-heading'>Discussion Boards</h1>
 
-            <div className='board'>
+            <div >
                 {boards.map(board => (
-                    <div>
+                    <div className='board'>
                         <Link to={`${board._id}`}>
                             <h3>{board.title}</h3>
                         </Link>

@@ -315,6 +315,11 @@ a {
   color: #ffffff; 
   text-decoration: none;
 }
+.board {
+  border: 2px solid white;
+  margin: 2vmin 5vmin;
+  box-shadow: 0 4px 8px rgb(0, 0, 0); 
+}
 
 
 .footer {
